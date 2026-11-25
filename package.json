@@ -1,0 +1,24 @@
+{
+  "name": "gabrinell96-web",
+  "version": "1.0.0",
+  "description": "Gabrinell 96 Unipessoal, Lda - landing page + admin dashboard (Express, SQLite, JWT, RBAC)",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed:reset": "node server/seed.js --reset",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.22.3",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
