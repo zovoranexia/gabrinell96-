@@ -57,6 +57,7 @@
       $('meta[property="og:description"]').setAttribute('content', desc);
     }
     $('#lang-current').textContent = state.lang.toUpperCase();
+    $('#lang-flag').src = `/assets/img/flags/${state.lang}.svg`;
     $$('#lang-menu li').forEach((li) => li.setAttribute('aria-selected', String(li.dataset.lang === state.lang)));
   }
 

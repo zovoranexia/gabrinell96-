@@ -119,12 +119,14 @@ button { font: inherit; cursor: pointer; }
 .lang { position: relative; }
 .lang__btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 8px 12px; border-radius: 999px; font-weight: 600; font-size: 0.88rem; transition: border-color 0.2s; }
 .lang__btn:hover { border-color: var(--blue-2); }
-.lang__menu { position: absolute; right: 0; top: calc(100% + 10px); min-width: 200px; background: #fff; border-radius: 16px; padding: 6px; box-shadow: var(--shadow); border: 1px solid var(--line); animation: pop 0.25s var(--ease); }
+.lang__menu { position: absolute; right: 0; top: calc(100% + 10px); min-width: 230px; background: #fff; border-radius: 16px; padding: 6px; box-shadow: var(--shadow); border: 1px solid var(--line); animation: pop 0.25s var(--ease); }
 .lang__menu[hidden] { display: none; }
 .lang__menu li { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 10px; cursor: pointer; font-size: 0.95rem; }
-.lang__menu li b { display: inline-grid; place-items: center; width: 30px; height: 24px; border-radius: 7px; background: var(--bg); font-size: 0.72rem; color: var(--blue); font-family: var(--font-head); }
+.flag { width: 28px; height: 20px; border-radius: 4px; object-fit: cover; box-shadow: 0 0 0 1px rgba(7, 12, 36, 0.14); flex: none; }
+.lang__menu li span { white-space: nowrap; line-height: 1.2; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .lang__menu li:hover, .lang__menu li[aria-selected='true'] { background: rgba(4, 71, 255, 0.07); }
-.lang__menu li[aria-selected='true'] b { background: var(--blue); color: #fff; }
+.lang__menu li[aria-selected='true'] { font-weight: 600; }
 @keyframes pop { from { opacity: 0; transform: translateY(-6px) scale(0.97); } }
 
 /* =====================================================================
